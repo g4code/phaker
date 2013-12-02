@@ -1,0 +1,24 @@
+{
+    "name": "g4code/g4-phaker",
+    "homepage": "http://g4fw.com",
+    "description": "G4 web service faking package",
+    "license": "MIT",
+    "keywords": [
+        "g4fw",
+        "phaker"
+    ],
+    "authors": [
+        {
+            "name": "Dejan Samardzija",
+            "email": "samardzija.dejan@"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "fzaninotto/faker": "*"
+    },
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-0": {"G4\\Phaker\\": "src/"}
+    }
+}
