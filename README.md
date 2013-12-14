@@ -1,7 +1,7 @@
-G4 Phaker
+Phaker
 ==========
 
-> G4 Framework - Phaker package - web service faker
+> Phaker - REST API faking package, stub required services for developing JS/mobile/hybrid apps, prototypes, etc
 
 ## License
 
