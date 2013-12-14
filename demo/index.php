@@ -3,9 +3,9 @@
 define('PATH_ROOT', realpath(__DIR__ . '/../') . DIRECTORY_SEPARATOR);
 require PATH_ROOT . 'vendor/autoload.php';
 
-use G4\Phaker\Phaker;
-use G4\Phaker\Responder\Responder;
-use G4\Phaker\Request;
+use Phaker\Phaker;
+use Phaker\Responder\Responder;
+use Phaker\Request;
 
 $faker = new Phaker();
 
@@ -13,8 +13,8 @@ $responder = new Responder;
 $responder
     ->setUrl('profile')
     ->setMethod(Phaker::METHOD_GET)
-    ->setResponseClass('G4\Phaker\Response\Ok')
-    ->setServiceClass('G4\Phaker\Service\Entity\FooBar');
+    ->setResponseClass('Phaker\Response\Ok')
+    ->setServiceClass('Phaker\Service\Entity\FooBar');
 
 $faker->register($responder);
 
