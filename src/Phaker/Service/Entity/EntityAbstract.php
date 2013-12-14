@@ -1,8 +1,8 @@
 <?php
 
-namespace G4\Phaker\Service\Entity;
+namespace Phaker\Service\Entity;
 
-use G4\Phaker\Service\ServiceAbstract;
+use Phaker\Service\ServiceAbstract;
 
 abstract class EntityAbstract extends ServiceAbstract
 {

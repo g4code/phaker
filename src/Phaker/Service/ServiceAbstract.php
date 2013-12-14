@@ -1,6 +1,6 @@
 <?php
 
-namespace G4\Phaker\Service;
+namespace Phaker\Service;
 
 abstract class ServiceAbstract
 {

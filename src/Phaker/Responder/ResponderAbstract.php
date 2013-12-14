@@ -1,8 +1,8 @@
 <?php
 
-namespace G4\Phaker\Responder;
+namespace Phaker\Responder;
 
-use G4\Phaker\Service\Entity\EntityAbstract;
+use Phaker\Service\Entity\EntityAbstract;
 
 abstract class ResponderAbstract
 {
@@ -84,7 +84,7 @@ abstract class ResponderAbstract
     /**
      *
      * @param string $value
-     * @return \G4\Phaker\Responder
+     * @return \Phaker\Responder
      */
     public function setMethod($value)
     {
@@ -95,7 +95,7 @@ abstract class ResponderAbstract
     /**
      *
      * @param string $value
-     * @return \G4\Phaker\Responder
+     * @return \Phaker\Responder
      */
     public function setUrl($value)
     {
@@ -106,7 +106,7 @@ abstract class ResponderAbstract
     /**
      *
      * @param string $value
-     * @return \G4\Phaker\Responder
+     * @return \Phaker\Responder
      */
     public function setResponseClass($value)
     {
@@ -117,7 +117,7 @@ abstract class ResponderAbstract
     /**
      *
      * @param string $value
-     * @return \G4\Phaker\Responder
+     * @return \Phaker\Responder
      */
     public function setServiceClass($value)
     {
@@ -128,7 +128,7 @@ abstract class ResponderAbstract
     /**
      *
      * @param array $value
-     * @return \G4\Phaker\Responder
+     * @return \Phaker\Responder
      */
     public function setServiceArguments($value)
     {
@@ -138,7 +138,7 @@ abstract class ResponderAbstract
 
     /**
      *
-     * @return G4\Phaker\Response\ResponseAbstract
+     * @return Phaker\Response\ResponseAbstract
      */
     abstract public function respond();
 

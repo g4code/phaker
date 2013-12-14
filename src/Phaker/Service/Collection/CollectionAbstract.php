@@ -1,8 +1,8 @@
 <?php
 
-namespace G4\Phaker\Service\Collection;
+namespace Phaker\Service\Collection;
 
-use G4\Phaker\Service\ServiceAbstract;
+use Phaker\Service\ServiceAbstract;
 
 abstract class CollectionAbstract extends ServiceAbstract
 {

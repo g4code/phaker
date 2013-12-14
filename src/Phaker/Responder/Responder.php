@@ -1,13 +1,13 @@
 <?php
 
-namespace G4\Phaker\Responder;
+namespace Phaker\Responder;
 
 class Responder extends ResponderAbstract
 {
 
     /**
      *
-     * @return G4\Phaker\Response\ResponseAbstract
+     * @return Phaker\Response\ResponseAbstract
      */
     public function respond()
     {

@@ -1,16 +1,16 @@
 <?php
 
-namespace G4\Phaker\Responder;
+namespace Phaker\Responder;
 
-use G4\Phaker\Response\NotFound as Response;
-use G4\Phaker\Service\Entity\NotFound as Entity;
+use Phaker\Response\NotFound as Response;
+use Phaker\Service\Entity\NotFound as Entity;
 
 class ResponderNotRegistered extends ResponderAbstract
 {
 
     /**
      *
-     * @return G4\Phaker\Response\ResponseAbstract
+     * @return Phaker\Response\ResponseAbstract
      */
     public function respond()
     {
