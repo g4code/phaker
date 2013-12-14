@@ -1,6 +1,6 @@
 <?php
 
-namespace G4\Phaker\Response;
+namespace Phaker\Response;
 
 abstract class ResponseAbstract
 {

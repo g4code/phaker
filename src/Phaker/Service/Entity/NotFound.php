@@ -1,6 +1,6 @@
 <?php
 
-namespace G4\Phaker\Service\Entity;
+namespace Phaker\Service\Entity;
 
 class NotFound extends EntityAbstract
 {

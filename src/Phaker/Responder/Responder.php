@@ -1,22 +1,21 @@
 <?php
 
-namespace G4\Phaker\Responder;
+namespace Phaker\Responder;
 
-use G4\Phaker\Response\NotFound as Response;
-use G4\Phaker\Service\Entity\NotFound as Entity;
-
-class ResponderNotRegistered extends ResponderAbstract
+class Responder extends ResponderAbstract
 {
 
     /**
      *
-     * @return G4\Phaker\Response\ResponseAbstract
+     * @return Phaker\Response\ResponseAbstract
      */
     public function respond()
     {
-        $service = new Entity;
+        $serviceClass = $this->getServiceClass();
+        $service = new $serviceClass($this->getServiceArguments());
 
-        $response = new Response();
+        $responseClass = $this->getResponseClass();
+        $response = new $responseClass;
 
         foreach($response->getAllHeaders() as $key => $value) {
             header(sprintf("%s: %s", $key, $value));

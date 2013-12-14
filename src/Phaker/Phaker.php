@@ -1,10 +1,10 @@
 <?php
 
-namespace G4\Phaker;
+namespace Phaker;
 
-use G4\Phaker\Request;
-use G4\Phaker\Responder\Responder;
-use G4\Phaker\Responder\ResponderNotRegistered;
+use Phaker\Request;
+use Phaker\Responder\Responder;
+use Phaker\Responder\ResponderNotRegistered;
 
 class Phaker
 {
@@ -39,7 +39,7 @@ class Phaker
      *
      * @param Responder $response
      * @throws \Exception
-     * @return \G4\Phaker\Phaker
+     * @return \Phaker\Phaker
      */
     public function register(Responder $response)
     {

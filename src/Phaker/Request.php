@@ -1,6 +1,6 @@
 <?php
 
-namespace G4\Phaker;
+namespace Phaker;
 
 class Request
 {
@@ -37,7 +37,7 @@ class Request
     /**
      *
      * @param string $value
-     * @return \G4\Phaker\Request
+     * @return \Phaker\Request
      */
     public function setMethod($value)
     {
@@ -48,7 +48,7 @@ class Request
     /**
      *
      * @param string $value
-     * @return \G4\Phaker\Request
+     * @return \Phaker\Request
      */
     public function setUrl($value)
     {
