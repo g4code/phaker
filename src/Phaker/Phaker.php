@@ -8,16 +8,22 @@ use Phaker\Responder\ResponderNotRegistered;
 
 class Phaker
 {
-    const METHOD_GET    = 'GET';
-    const METHOD_POST   = 'POST';
-    const METHOD_PUT    = 'PUT';
-    const METHOD_DELETE = 'DELETE';
+    /**
+     * Actions methods, "translated" from HTTP request method
+     * @var string
+     */
+    const METHOD_INDEX  = 'index';
+    const METHOD_GET    = 'get';
+    const METHOD_POST   = 'post';
+    const METHOD_PUT    = 'put';
+    const METHOD_DELETE = 'delete';
 
     /**
      *
      * @var array
      */
     protected $_validMethods = array(
+        self::METHOD_INDEX,
         self::METHOD_GET,
         self::METHOD_POST,
         self::METHOD_PUT,
@@ -30,7 +36,7 @@ class Phaker
      */
     protected $_registeredResponses;
 
-    protected function _validMethod($method)
+    protected function _isValidMethod($method)
     {
         return in_array($method, $this->_validMethods);
     }
@@ -43,7 +49,7 @@ class Phaker
      */
     public function register(Responder $response)
     {
-        if(!$this->_validMethod($response->getMethod())) {
+        if(!$this->_isValidMethod($response->getMethod())) {
             throw new \Exception('Response method is not valid');
         }
 
